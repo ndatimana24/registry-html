@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Registry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🇷🇼 Registry</div>
+    <div class="nav-links">
+      <span id="welcome"></span>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+  </nav>
+
+  <div class="dashboard">
+    <h2>Dashboard</h2>
+
+    <div class="stats">
+      <div class="stat-card">
+        <h3 id="totalBirths">0</h3>
+        <p>Total Births</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="totalDeaths">0</h3>
+        <p>Total Deaths</p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn-primary" onclick="showForm('birth')">➕ Record Birth</button>
+      <button class="btn-secondary" onclick="showForm('death')">➕ Record Death</button>
+    </div>
+
+    <div id="formArea"></div>
+    <div id="recordsList"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

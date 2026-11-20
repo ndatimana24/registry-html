@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Registry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">RW Registry — Admin</div>
+    <div class="nav-links">
+      <span id="adminWelcome"></span>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+  </nav>
+
+  <div class="dashboard">
+    <h2>Admin Dashboard</h2>
+    
+    <div class="stats">
+      <div class="stat-card">
+        <h3 id="adminBirths">0</h3>
+        <p>Total Births</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="adminDeaths">0</h3>
+        <p>Total Deaths</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="adminUsers">0</h3>
+        <p>Total Users</p>
+      </div>
+    </div>
+
+    <h3>All Users</h3>
+    <div id="usersList"></div>
+
+    <h3 style="margin-top:2rem;">All Records</h3>
+    <div id="allRecordsList"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
